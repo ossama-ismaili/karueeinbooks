@@ -1,0 +1,447 @@
+/** Default Style **/
+
+.App{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+/** Header Style **/
+
+.jumbotron{
+    background-image: url("http://localhost:8000/images/header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15% 10px 15% 10px;
+    border-radius: 0px 0px 5px 5px;
+    min-height: 300px;
+}
+
+.navbar-styled-light{
+    background-image:url("http://localhost:8000/images/decoration.jpg");
+    background-size: 140px;
+    background-position-x: 0;
+    animation: bright 1s ease forwards;
+}
+
+.navbar-styled-dark{
+  background:transparent;
+}
+
+.nav-icon{
+    font-size: 18px;
+    background-color: #ebb800;
+    padding:2px 8px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    color: rgba(85, 32, 32, 0.5);
+}
+
+.nav-icon:hover{
+  background-color: #ffd22d;
+  color: rgba(85, 32, 32, 1);
+}
+
+.navbar-find-book-dark{
+  color:#fff;
+  width: 150px;
+  height: 35px;
+  border: 1px solid #ccc;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+}
+
+.navbar-find-book-dark::before, .navbar-find-book-dark::after {
+  position: absolute;
+  background: transparent;
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.navbar-find-book-dark::before {
+  height: 35px;
+  width: 130px;
+}
+
+.navbar-find-book-dark::after {
+  width: 150px;
+  height: 30px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.navbar-find-book-dark:hover::before {
+  width: 0px;
+  background: #000;
+}
+
+.navbar-find-book-dark:hover::after {
+  height: 0px;
+  background: #000;
+}
+
+.navbar-find-book-dark:hover {
+  background: #000;
+}
+
+.navbar-find-book-light{
+  color:#000;
+  width: 150px;
+  height: 35px;
+  border: 1px solid #333;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+}
+
+.navbar-find-book-light::before, .navbar-find-book-light::after {
+  position: absolute;
+  background: transparent;
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.navbar-find-book-light::before {
+  height: 35px;
+  width: 130px;
+}
+
+.navbar-find-book-light::after {
+  width: 150px;
+  height: 30px;
+}
+
+.navbar-find-book-light:hover::before {
+  width: 0px;
+  background: #fff;
+}
+
+.navbar-find-book-light:hover::after {
+  height: 0px;
+  background: #fff;
+}
+
+.navbar-find-book-light:hover {
+  background: #fff;
+}
+
+/** Footer Style **/
+
+.App-footer{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(204, 162, 58) 0%, rgb(253, 225, 155) 100%);
+    padding: 5px;
+}
+
+.App-footer .list-element a{
+    color:#1e1e10;
+}
+
+
+.media-list li{
+    display: inline;
+}
+
+.btn-footer{
+    color: #fff;
+    font-weight: bold;
+    width:100px;
+}
+
+.btn-footer:hover{
+    color: #fff;
+    border-color: #fff;
+    font-size: 1.1em;
+}
+
+
+.footer-title a{
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-title a:hover{
+    text-decoration: none;
+}
+
+/** Login Style **/
+
+.bg-login{
+  background-image: url("http://localhost:8000/images/login-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.App-login{
+  min-height: 400px;
+  animation: expand .8s ease forwards;
+  margin-bottom: 25px;
+}
+
+/** Home Style **/
+
+.App-home{
+  min-height: 400px;
+  animation: expand .8s ease forwards;
+  margin-bottom: 25px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding:100px 5px 100px 5px;
+  background-size: 100%, 100%;
+}
+
+.carousel-control-prev-icon{
+  border-radius: 10px 0px 0px 10px;
+}
+
+.carousel-control-next-icon{
+  border-radius: 0px 10px 10px 0px;
+}
+
+.section-recommend h2{
+  text-align: center;
+  font-size: 32px;
+}
+
+.recommend-book .card-title{
+  font-size: 22px;
+}
+
+/** Books page Style **/
+
+.App-book{
+  min-height: 400px;
+  animation: expand .8s ease forwards;
+  margin-bottom: 25px;
+}
+
+.App-book .card-title{
+  font-size: 18px;
+}
+
+.image-container{
+  position: relative;
+}
+
+.image-container img{
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.book-img-middle{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-container:hover img{
+  filter :brightness(50%);
+}
+
+.image-container:hover .book-img-middle {
+  opacity: 1;
+}
+
+.image-container .book-icon{
+  background-color: #ebb800;
+  border-radius: 50%;
+  color: white;
+  font-size: 36px;
+  padding: 24px;
+}
+
+/** Cart Style **/
+
+.App-cart{
+  min-height: 400px;
+  animation: expand .8s ease forwards;
+  margin-bottom: 25px;
+}
+
+.App-cart h2{
+  font-size: 24px;
+}
+
+.user-cart{
+  border:1px #eee solid;
+  border-radius: 5px;
+  padding:10px;
+}
+
+.user-cart h4{
+  font-size: 18px;
+}
+
+.cart-item{
+  border:1px #ccc solid;
+  border-radius: 5px;
+  padding:5px;
+  margin:5px 0px 5px 0px;
+}
+
+/** Book Info Style **/
+
+.App-book-info{
+  min-height: 400px;
+  margin-bottom: 10px;
+  animation: expand .8s ease forwards;
+  margin-bottom: 25px;
+}
+
+.App-book-info h2{
+  font-size: 28px;
+}
+
+.App-book-info h4{
+  font-size: 18px;
+}
+
+.App-book-info .book-price{
+  font-size: 20px;
+}
+
+.App-book-info .book-quantity{
+  font-size: 20px;
+}
+
+/** Loading Page **/
+
+.App-loading{
+  min-height: 400px;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/** Error Page **/
+
+.App-error{
+  min-height: 400px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.App-error h1{
+  font-size: 32px;
+}
+
+.App-error p{
+  font-size: 26px;
+}
+
+/** Register Page **/
+
+.App-register{
+  min-height: 400px;
+  animation: expand .8s ease forwards;
+  margin-bottom: 25px;
+}
+
+.App-register .register-title{
+  font-size: 28px;
+  text-align: center;
+}
+
+/** Background Colors **/
+
+.bg-maria{
+    background-color: #d32554;
+}
+
+.bg-older{
+    background-color: #efa100;
+}
+
+/** Animations **/
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-500px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes bright {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /** Testing (Delete After Test Period) **/
+
+.test-container{
+    text-align: center;
+    padding: 50px;
+}
